@@ -47,7 +47,7 @@ digits = load_digits()
 dgx, dgy = stdsc.fit_transform(digits.data/16.0), digits.target  #digts.data is the training data; digits.target is the output training
 print("dgx shape:", dgx.shape) # give the dimension of the array
 print("dgy shape:", dgy.shape)
-x_train, x_test, y_train, y_test = train_test_split(irx, iry, test_size=0.2)
+x_train, x_test, y_train, y_test = train_test_split(dgx, dgy, test_size=0.2)
 
 # build model and train
 model = elm.elm(hidden_units=32, activation_function='relu', random_type='normal', x=x_train, y=y_train, C=0.1, elm_type='clf')
