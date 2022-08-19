@@ -22,7 +22,7 @@ print("Cable fault detector dataset>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
 # load dataset
 train = pd.read_csv(cwd + "/train_20052022.csv")
-test = pd.read_csv(cwd + "/test_20052022.csv")
+test = pd.read_csv(cwd + "/test_1.csv")
 # processing training data
 x_train = stdsc.fit_transform(train.values[:,1:]/16.0)
 y_train_transpose = np.transpose(train.values[:,:1])
@@ -34,7 +34,7 @@ y_test = y_test_transpose[0]
 print("Cable fault detector dataset classification>>>>>>>>>>>>>>>>>>>>>>>>")
 
 #training
-model = elm.elm(hidden_units=10000, activation_function='sigmoid', random_type='normal', x=x_train, y=y_train, C=0.1, elm_type='clf')
+model = elm.elm(hidden_units=100, activation_function='sigmoid', random_type='normal', x=x_train, y=y_train, C=0.1, elm_type='clf')
 beta, train_accuracy, running_time = model.fit('solution2')
 print("classifier beta:\n", beta)
 print("classifier train accuracy:", train_accuracy)
