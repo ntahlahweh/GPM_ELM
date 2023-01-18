@@ -93,6 +93,9 @@ Compute accuracy or RMSE given data and labels
 * Return:
   * test_score: float, accuracy or RMSE
 
+CABLE FAULTS USING LEARNING ALGORITHM IN LARGE SCALE SOLAR (LSS)
+===
+
 
 References
 ---
