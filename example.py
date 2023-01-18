@@ -1,6 +1,7 @@
 # Final edited date: 2018.3.7
 # Author: Li Xudong, from NSSC.CAS Beijing
-# Version: 1.0
+# Version: 1.04
+# Updated By: Hafiz Zaini - particularly to run Cable Fault detection Algorithm
 # Description: Test the model with some simple dataset to solve classification problems and
 #              regression problem. The datasets of classification problems are irises dataset
 #              and handwritten number dataset. The dataset of regression problem is randomly
