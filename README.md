@@ -109,6 +109,8 @@ References
 [1] Huang G B, Zhu Q Y, Siew C K. Extreme learning machine: theory and applications[J]. Neurocomputing, 2006, 70(1-3): 489-501.</br>
 [2] Huang G B, Zhou H, Ding X, et al. Extreme learning machine for regression and multiclass classification[J]. IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics), 2012, 42(2): 513-529.</br>
 [3] http://www.ntu.edu.sg/home/egbhuang/index.html
+[4] . Li, W. Li, Q. Yang, W. Yan and A. Y. Zomaya, "An Unmanned Inspection System for Multiple Defects Detection in Photovoltaic Plants," in IEEE Journal of Photovoltaics, vol. 10, no. 2, pp. 568-576, March 2020, doi: 10.1109/JPHOTOV.2019.2955183.
+[5] A. Dhoke, R. Sharma and T. K. Saha, "Condition monitoring of a large-scale PV power plant in Australia," 2016 IEEE Power and Energy Society General Meeting (PESGM), Boston, MA, 2016, pp. 1-5, doi: 10.1109/PESGM.2016.7742048.
 
 
 
