@@ -95,6 +95,12 @@ Compute accuracy or RMSE given data and labels
 
 CABLE FAULTS USING LEARNING ALGORITHM IN LARGE SCALE SOLAR (LSS)
 ===
+Fault detection and timely troubleshooting are essential for the optimum performance in any power generation system, including photovoltaic (PV) systems. In particular, the goal for any commercial power-producing house is maximizing power production, minimizing energy loss and maintenance cost, and the safe operation of the facility. Since PV systems are subject to various faults and failures, early detection of such faults and failures is very crucial for achieving the goal 
+
+With the large numbers of PV modules and strings, it would be a problem to detect the faulty string or PV module in a short time duration. Troubleshooting requires the fault finder team to shut down certain strings to locate the fault which is obviously based on trial and error method. Once the PV is shutdown, it will take 30 minutes to resume the power supply. Thus, more hours are needed if the trial and error method begins at a CB which is far from the actual fault location.  Hence, a proper method is crucial in this case to locate the affected PV string so that the fault can be detected and fixed quickly to resume the operation of PV farm. 
+
+By developing a fault diagnosis model for fault detection and localisation of DC cable in PV systems using machine learning technique this would help the time taken for the remediation process shorten. Thus, the power plan can resume its operation in an immediate manner.
+
 
 
 References
