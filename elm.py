@@ -1,6 +1,7 @@
 # Final edited date: 2018.3.7
 # Author: Li Xudong, from NSSC.CAS Beijing
-# Version: 1.0
+# Version: 1.04
+# Updated By: Hafiz Zaini - particularly to run Cable Fault detection Algorithm
 # Description: Extreme Learning Machine (ELM) class
 # Methods:
 #   fit(algorithm)
