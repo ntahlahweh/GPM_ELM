@@ -25,7 +25,7 @@ test = pd.read_csv(cwd + "/test_20052022.csv")
 # processing training data
 x_train = stdsc.fit_transform(train.values[:,1:]/16.0) # take the cb and ir values
 y_train = train.values[:,:1] # take the target value
-print(y_train)
+#print(y_train)
 
 # processing test data
 x_test = stdsc.fit_transform(test.values[:,1:]/16.0)
@@ -34,8 +34,8 @@ y_test = test.values[:,:1]
 print("Cable fault detector dataset classification>>>>>>>>>>>>>>>>>>>>>>>>")
 
 # List of hidden nodes and activation functions
-hidden_nodes_list = [10, 30, 50, 100, 200, 300, 500, 800, 1000, 1200, 1500, 2000, 4000]
-activation_funcs = ['sigmoid', 'relu']
+hidden_nodes_list = [5, 10, 30, 50, 100, 200, 300, 500, 800, 1000, 1200, 1500, 2000, 4000, 6000, 8000, 10000]
+activation_funcs = ['sigmoid']
 
 # Initialize KFold for cross-validation
 kf = KFold(n_splits=5, shuffle=True, random_state=42)
@@ -60,11 +60,12 @@ for activation_func in activation_funcs:
 
             # Train ELM model
             model = elm.elm(hidden_units=hidden_nodes, activation_function=activation_func, random_type='normal', x=x_train_cv, y=y_train_cv, C=0.1, elm_type='clf')
-            beta, train_accuracy, running_time = model.fit('solution2')
+            beta, train_accuracy, running_time = model.fit('no_re')
 
             # Evaluate on the validation set
             val_accuracy = model.score(x_val_cv, y_val_cv)
             accuracies.append(val_accuracy)
+            print(f"Validation set accuracy: {val_accuracy}")
 
             # After validation, evaluate on the test set
             test_accuracy = model.score(x_test, y_test)
